@@ -1,12 +1,19 @@
 import './App.css';
+import './styles/styles.scss'
+
+import { NavBar } from './components/Navbar';
+import { RatesTableContainer } from './components/RatesTableContainer';
+import { ConverterContainer } from './components/ConverterContainer';
 
 function App() {
   return (
-    <div>
+    <>
       <header>
-        QuickFX
+        <NavBar></NavBar>
       </header>
-    </div>
+{/*       <RatesTableContainer></RatesTableContainer> */}
+      <ConverterContainer></ConverterContainer>
+    </>
   );
 }
 
